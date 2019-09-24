@@ -12,7 +12,7 @@ then
     /usr/local/bin/youtube-dl -x --audio-format m4a "$1" -o "$HOME/OneDrive/video/${currentDate}.%(ext)s"
   fi
 
-  if [ "$3" != "n" ]
+  if [ "$3" = "sync" ]
   then
     /usr/local/bin/onedrive --synchronize
   fi
